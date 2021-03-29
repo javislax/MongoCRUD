@@ -12,7 +12,7 @@ router.delete("/serie/:id", serieController.deleteSerie);
 router.post("/platform", platformController.savePlatform);
 router.get("/platforms", platformController.getPlatforms);
 router.get("/platform/:id", platformController.getPlatform);
-//router.put("/platform/:id", platformController.updatePlatform);
-//router.delete("/platform/:id", platformController.deletePlatform);
+router.put("/platform/:id", platformController.updatePlatform);
+router.delete("/platform/:id", platformController.deletePlatform);
 
 module.exports = router;
