@@ -23,9 +23,6 @@ controller.getPlatforms = async (req, res) => {
     const query = {
       $or: [
         { name: new RegExp(filter, "i") },
-        {
-          type: new RegExp(filter, "i"),
-        },
       ],
     };
     const platforms = await Platform.find(query);
